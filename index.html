@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pablo Barquero — Marketing Digital</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="logo">Pablo<span>Barquero</span></div>
+    <ul class="nav-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#proceso">Proceso</a></li>
+      <li><a href="#pablo-scroll">Resultados</a></li>
+    </ul>
+    <a href="#contacto" class="btn-nav">Hablemos</a>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── FLOATING BG ICONS ── -->
+<div class="floating-layer" id="floatLayer">
+  <!-- Instagram -->
+  <div class="float-icon fi-1" data-depth="0.3">
+    <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="url(#ig1)" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="url(#ig1)" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="url(#ig1)"/><defs><linearGradient id="ig1" x1="2" y1="22" x2="22" y2="2" gradientUnits="userSpaceOnUse"><stop stop-color="#f58529"/><stop offset="0.5" stop-color="#dd2a7b"/><stop offset="1" stop-color="#515bd4"/></linearGradient></defs></svg>
+  </div>
+  <!-- TikTok -->
+  <div class="float-icon fi-2" data-depth="0.5">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.79a8.16 8.16 0 004.77 1.52V6.84a4.85 4.85 0 01-1-.15z" fill="url(#tt1)"/><defs><linearGradient id="tt1" x1="3" y1="2" x2="21" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#69C9D0"/><stop offset="1" stop-color="#EE1D52"/></linearGradient></defs></svg>
+  </div>
+  <!-- Podcast mic -->
+  <div class="float-icon fi-3" data-depth="0.2">
+    <svg viewBox="0 0 24 24" fill="none"><rect x="9" y="2" width="6" height="11" rx="3" stroke="url(#pod1)" stroke-width="2"/><path d="M5 10a7 7 0 0014 0" stroke="url(#pod1)" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="17" x2="12" y2="21" stroke="url(#pod1)" stroke-width="2" stroke-linecap="round"/><line x1="8" y1="21" x2="16" y2="21" stroke="url(#pod1)" stroke-width="2" stroke-linecap="round"/><defs><linearGradient id="pod1" x1="5" y1="2" x2="19" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#a78bfa"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs></svg>
+  </div>
+  <!-- Star -->
+  <div class="float-icon fi-4" data-depth="0.6">
+    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="url(#star1)"/><defs><linearGradient id="star1" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#fbbf24"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs></svg>
+  </div>
+  <!-- Play circle -->
+  <div class="float-icon fi-5" data-depth="0.4">
+    <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="url(#play1)" stroke-width="2"/><path d="M10 8l6 4-6 4V8z" fill="url(#play1)"/><defs><linearGradient id="play1" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#34d399"/><stop offset="1" stop-color="#059669"/></linearGradient></defs></svg>
+  </div>
+  <!-- Chart bar -->
+  <div class="float-icon fi-6" data-depth="0.35">
+    <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="12" width="4" height="9" rx="1" fill="url(#bar1)"/><rect x="10" y="7" width="4" height="14" rx="1" fill="url(#bar1)"/><rect x="17" y="3" width="4" height="18" rx="1" fill="url(#bar1)"/><defs><linearGradient id="bar1" x1="3" y1="3" x2="21" y2="21" gradientUnits="userSpaceOnUse"><stop stop-color="#60a5fa"/><stop offset="1" stop-color="#2563eb"/></linearGradient></defs></svg>
+  </div>
+  <!-- Heart -->
+  <div class="float-icon fi-7" data-depth="0.45">
+    <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" fill="url(#heart1)"/><defs><linearGradient id="heart1" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#f472b6"/><stop offset="1" stop-color="#ec4899"/></linearGradient></defs></svg>
+  </div>
+  <!-- Zap -->
+  <div class="float-icon fi-8" data-depth="0.55">
+    <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="url(#zap1)"/><defs><linearGradient id="zap1" x1="3" y1="2" x2="21" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#fde68a"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs></svg>
+  </div>
+  <!-- Orbiting ring 1 -->
+  <div class="orbit-ring or-1" data-depth="0.1"></div>
+  <div class="orbit-ring or-2" data-depth="0.15"></div>
+  <div class="orbit-ring or-3" data-depth="0.08"></div>
+</div>
+
+<!-- ── HERO ── -->
+<section id="hero">
+
+  <!-- 3D GLB figures — left and right -->
+  <canvas id="canvas3d-left"  class="hero-3d hero-3d-left"></canvas>
+  <canvas id="canvas3d-right" class="hero-3d hero-3d-right"></canvas>
+
+  <!-- Floating brand logos -->
+  <div class="hero-float-logo hfl-tiktok">
+    <img src="TikTokLogo.webp" alt="TikTok" />
+  </div>
+  <div class="hero-float-logo hfl-podcast">
+    <img src="IconoPodcast.png" alt="Podcast" />
+  </div>
+
+  <div class="hero-content hero-centered">
+<h1 class="hero-h1 reveal-up">
+      Tu audiencia<br/>
+      <span class="hero-accent">vale millones.</span><br/>
+      Yo te ayudo a<br/>
+      <span class="hero-accent">cobrarlos.</span>
+    </h1>
+
+    <!-- Animated counters -->
+    <div class="hero-counters reveal-up">
+      <div class="hc-item">
+        <span class="counter hc-num" data-target="43000">0</span>
+        <span class="hc-label">Seguidores TikTok</span>
+      </div>
+      <div class="hc-divider"></div>
+      <div class="hc-item">
+        <span class="counter hc-num" data-target="3500000">0</span>
+        <span class="hc-label">Total Likes</span>
+      </div>
+      <div class="hc-divider"></div>
+      <div class="hc-item">
+        <span class="counter hc-num" data-target="20000">0</span>
+        <span class="hc-label">Grupo Memorable</span>
+      </div>
+    </div>
+
+    <p class="hero-sub reveal-up">
+      Soy Pablo Barquero. Crecí hasta <strong>43 000 seguidores</strong> en TikTok y
+      <strong>3.5M de likes</strong>. Ahora convierto la audiencia de creadores
+      como tú en ingresos reales — sin que tengas que aprender marketing.
+    </p>
+    <div class="hero-ctas reveal-up">
+      <a href="#contacto" class="btn-primary">Quiero monetizar</a>
+      <a href="#proceso" class="btn-ghost">Ver cómo funciona</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── PABLO STICKY SCROLL ── -->
+<section id="pablo-scroll">
+
+  <!-- LEFT: foto 100% pegada — nunca se mueve -->
+  <div class="ps-left">
+    <img src="fotoPabloBarquero.webp" alt="Pablo Barquero" class="ps-photo" />
+    <div class="ps-left-veil"></div>
+  </div>
+
+  <!-- RIGHT: stats que scrollean con fluidez -->
+  <div class="ps-right">
+
+    <div class="ps-stat">
+      <div class="ps-tag" style="--c:#EE1D52">TikTok</div>
+      <div class="ps-num">43K</div>
+      <div class="ps-label">Seguidores</div>
+      <div class="ps-handle">@pablobarquero_</div>
+      <p class="ps-desc">Mi cuenta principal donde comparto estrategias de marketing digital, mentalidad emprendedora y el detrás de cámara del mundo creator. 43 000 personas que confían en lo que cuento.</p>
+      <div class="ps-pills">
+        <span>Marketing Digital</span><span>Emprendimiento</span><span>Lifestyle</span>
+      </div>
+    </div>
+
+    <div class="ps-stat">
+      <div class="ps-tag" style="--c:#ec4899">Engagement</div>
+      <div class="ps-num">3.5M</div>
+      <div class="ps-label">Likes en TikTok</div>
+      <div class="ps-handle">@pablobarquero_</div>
+      <p class="ps-desc">Tres millones y medio de likes son evidencia de que el contenido conecta. Cada like es una persona que paró el scroll, vio el vídeo completo y lo validó.</p>
+      <div class="ps-pills">
+        <span>Viral Content</span><span>Engagement Real</span><span>Audiencia Activa</span>
+      </div>
+    </div>
+
+    <div class="ps-stat">
+      <div class="ps-tag" style="--c:#f58529">Instagram</div>
+      <div class="ps-num">9K</div>
+      <div class="ps-label">Seguidores</div>
+      <div class="ps-handle">@pablobarquero__</div>
+      <p class="ps-desc">En Instagram publico contenido más personal: reflexiones, experiencias y estrategias de marca personal. Una comunidad íntima pero igual de comprometida.</p>
+      <div class="ps-pills">
+        <span>Marca Personal</span><span>Reels</span><span>Stories</span>
+      </div>
+    </div>
+
+    <div class="ps-stat">
+      <div class="ps-tag" style="--c:#7c3aed">Grupo Memorable</div>
+      <div class="ps-num">20K</div>
+      <div class="ps-label">Seguidores TikTok</div>
+      <div class="ps-handle">@grupomemorable</div>
+      <p class="ps-desc">El colectivo que co-fundé con amigos estudiantes. Juntos creamos un podcast sobre emprendimiento y vida joven que resonó con miles de personas.</p>
+      <div class="ps-pills">
+        <span>Podcast</span><span>Estudiantes</span><span>Comunidad</span>
+      </div>
+    </div>
+
+    <div class="ps-stat">
+      <div class="ps-tag" style="--c:#2563eb">Podcast</div>
+      <div class="ps-num">2.5M</div>
+      <div class="ps-label">Likes en Podcast</div>
+      <div class="ps-handle">@grupomemorable</div>
+      <p class="ps-desc">Conversaciones honestas sobre emprendimiento entre jóvenes. 2.5 millones de likes que demuestran que la autenticidad escala mejor que cualquier campaña de pago.</p>
+      <div class="ps-pills">
+        <span>Podcast Viral</span><span>Gen Z</span><span>Autenticidad</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ── GRUPO MEMORABLE ── -->
+<section id="grupo-memorable" class="memorable-section">
+  <div class="mem-bg-noise"></div>
+  <div class="mem-orb mem-orb-1"></div>
+  <div class="mem-orb mem-orb-2"></div>
+  <div class="mem-orb mem-orb-3"></div>
+
+  <!-- Floating animated icons -->
+  <div class="mem-float mf-1" data-depth="0.3">🎙️</div>
+  <div class="mem-float mf-2" data-depth="0.5">🎧</div>
+  <div class="mem-float mf-3" data-depth="0.2">🔥</div>
+  <div class="mem-float mf-4" data-depth="0.4">📱</div>
+  <div class="mem-float mf-5" data-depth="0.35">⭐</div>
+  <div class="mem-float mf-6" data-depth="0.45">🎵</div>
+
+  <div class="mem-inner">
+    <!-- Logo + headline -->
+    <div class="mem-top reveal-up">
+      <div class="mem-logo-wrap">
+        <img src="LogoMemorable.png" alt="Grupo Memorable" class="mem-logo" />
+      </div>
+      <div class="section-tag mem-tag-light">Grupo Memorable</div>
+      <h2 class="mem-h2">
+        El colectivo de jóvenes<br/>
+        <span class="gradient-text-3">que está cambiando<br/>el podcast en España.</span>
+      </h2>
+    </div>
+
+    <!-- Two columns: description + stats visual -->
+    <div class="mem-cols">
+      <div class="mem-desc reveal-left">
+        <p>Grupo Memorable nació de una idea simple entre amigos estudiantes: <strong>¿y si grabamos lo que pensamos de verdad?</strong> Sin filtros corporativos, sin guiones de agencia. Solo jóvenes con ganas de aprender, fallar y crecer en público.</p>
+        <p>El podcast creció orgánicamente hasta convertirse en una referencia para toda una generación. Hablamos de emprendimiento, mentalidad, relaciones y el día a día de quien está construyendo su camino — y la audiencia lo sintió auténtico.</p>
+        <p>Hoy Grupo Memorable es una plataforma, una comunidad y una prueba de que <strong>la autenticidad sí escala.</strong></p>
+        <div class="mem-pillars">
+          <div class="mem-pillar">
+            <div class="mp-icon">🎙️</div>
+            <div class="mp-text">
+              <strong>Podcast Auténtico</strong>
+              <span>Sin guiones, sin filtros. Conversaciones reales entre estudiantes.</span>
+            </div>
+          </div>
+          <div class="mem-pillar">
+            <div class="mp-icon">🧠</div>
+            <div class="mp-text">
+              <strong>Mentalidad Joven</strong>
+              <span>Emprendimiento, errores, aprendizajes y crecimiento personal.</span>
+            </div>
+          </div>
+          <div class="mem-pillar">
+            <div class="mp-icon">🚀</div>
+            <div class="mp-text">
+              <strong>Crecimiento Orgánico</strong>
+              <span>De 0 a 20K seguidores y 2.5M likes sin inversión publicitaria.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mem-visual-col reveal-right">
+        <!-- Big stat cards -->
+        <div class="mem-stat-card msc-1">
+          <div class="msc-platform">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.79a8.16 8.16 0 004.77 1.52V6.84a4.85 4.85 0 01-1-.15z" fill="url(#mtt1)"/><defs><linearGradient id="mtt1" x1="3" y1="2" x2="21" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#69C9D0"/><stop offset="1" stop-color="#EE1D52"/></linearGradient></defs></svg>
+            TikTok
+          </div>
+          <div class="msc-num">20K</div>
+          <div class="msc-lbl">Seguidores</div>
+          <div class="msc-handle">@grupomemorable</div>
+          <div class="msc-bar"><div class="msc-bar-fill" style="width:40%"></div></div>
+        </div>
+        <div class="mem-stat-card msc-2">
+          <div class="msc-platform">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="9" y="2" width="6" height="11" rx="3" stroke="url(#mpod1)" stroke-width="2"/><path d="M5 10a7 7 0 0014 0" stroke="url(#mpod1)" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="17" x2="12" y2="21" stroke="url(#mpod1)" stroke-width="2" stroke-linecap="round"/><line x1="8" y1="21" x2="16" y2="21" stroke="url(#mpod1)" stroke-width="2" stroke-linecap="round"/><defs><linearGradient id="mpod1" x1="5" y1="2" x2="19" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#a78bfa"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs></svg>
+            Podcast
+          </div>
+          <div class="msc-num">2.5M</div>
+          <div class="msc-lbl">Likes totales</div>
+          <div class="msc-handle">@grupomemorable</div>
+          <div class="msc-bar"><div class="msc-bar-fill msc-bar-purple" style="width:100%"></div></div>
+        </div>
+        <!-- Floating quote card -->
+        <div class="mem-quote reveal-up">
+          <div class="mq-mark">"</div>
+          <p>Lo que empezó como un proyecto entre amigos se convirtió en una comunidad real.</p>
+          <span>— Pablo Barquero</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES ── -->
+<section id="servicios" class="services-section">
+  <div class="section-header reveal-up">
+    <div class="section-tag">Servicios</div>
+    <h2>El stack completo<br/><span class="gradient-text">para crecer y monetizar</span></h2>
+    <p>Cada servicio diseñado por alguien que lo aplica primero en sus propios canales.</p>
+  </div>
+
+  <div class="stack-deck">
+
+    <div class="stack-card sc-1" style="background-image:url('https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&q=80&fit=crop')">
+      <div class="sc-overlay"></div>
+      <div class="sc-content">
+        <span class="sc-num">01</span>
+        <span class="sc-pill">Contenido</span>
+        <h3>Creación de Contenido</h3>
+        <p>Guiones, edición y estrategia de publicación adaptada a tu voz. TikTok, Reels, Podcasts.</p>
+        <div class="sc-tags"><span>TikTok</span><span>Reels</span><span>Podcast</span></div>
+      </div>
+    </div>
+
+    <div class="stack-card sc-2" style="background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80&fit=crop')">
+      <div class="sc-overlay"></div>
+      <div class="sc-content">
+        <span class="sc-num">02</span>
+        <span class="sc-pill">Estrategia</span>
+        <h3>Crecimiento Orgánico</h3>
+        <p>Auditoría de perfiles, análisis de audiencia y Game Plan en 24 horas.</p>
+        <div class="sc-tags"><span>Auditoría</span><span>Analytics</span></div>
+      </div>
+    </div>
+
+    <div class="stack-card sc-3" style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80&fit=crop')">
+      <div class="sc-overlay"></div>
+      <div class="sc-content">
+        <span class="sc-num">03</span>
+        <span class="sc-pill">Monetización</span>
+        <h3>Productos Digitales</h3>
+        <p>Cursos, ebooks, comunidades, masterminds. Desde el nombre hasta el primer euro.</p>
+        <div class="sc-tags"><span>Cursos</span><span>Ebooks</span><span>Membresías</span></div>
+      </div>
+    </div>
+
+    <div class="stack-card sc-4" style="background-image:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&q=80&fit=crop')">
+      <div class="sc-overlay"></div>
+      <div class="sc-content">
+        <span class="sc-num">04</span>
+        <span class="sc-pill">Lanzamiento</span>
+        <h3>Gestión de Lanzamientos</h3>
+        <p>Campaña de 14 días gestionada por nosotros. Tú creas, nosotros cerramos ventas.</p>
+        <div class="sc-tags"><span>14 días</span><span>Ventas</span></div>
+      </div>
+    </div>
+
+    <div class="stack-card sc-5" style="background-image:url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80&fit=crop')">
+      <div class="sc-overlay"></div>
+      <div class="sc-content">
+        <span class="sc-num">05</span>
+        <span class="sc-pill">Comunidad</span>
+        <h3>Community Management</h3>
+        <p>Gestión diaria de redes, comentarios, DMs y construcción de comunidad comprometida.</p>
+        <div class="sc-tags"><span>DMs</span><span>Engagement</span></div>
+      </div>
+    </div>
+
+    <div class="stack-card sc-6" style="background-image:url('https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&q=80&fit=crop')">
+      <div class="sc-overlay"></div>
+      <div class="sc-content">
+        <span class="sc-num">06</span>
+        <span class="sc-pill">Paid Media</span>
+        <h3>Publicidad de Pago</h3>
+        <p>Meta Ads y TikTok Ads para amplificar lo que ya funciona orgánicamente.</p>
+        <div class="sc-tags"><span>Meta Ads</span><span>TikTok Ads</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── PROCESO ── -->
+<section id="proceso" class="proceso-section">
+  <div class="section-header reveal-up">
+    <div class="section-tag">Proceso</div>
+    <h2>De cero a ingresos<br/><span class="gradient-text-2">en 3 pasos</span></h2>
+  </div>
+  <div class="proceso-steps">
+    <div class="paso reveal-left">
+      <div class="paso-num">01</div>
+      <div class="paso-content">
+        <div class="paso-icon-wrap">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" stroke="url(#p1)" stroke-width="2" stroke-linecap="round"/><path d="M18.5 2.5a2.12 2.12 0 013 3L12 15l-4 1 1-4 9.5-9.5z" stroke="url(#p1)" stroke-width="2" stroke-linecap="round"/><defs><linearGradient id="p1" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#60a5fa"/><stop offset="1" stop-color="#2563eb"/></linearGradient></defs></svg>
+        </div>
+        <h3>Análisis y Game Plan</h3>
+        <p>Auditamos tus perfiles, identificamos tu potencial de ingresos y te entregamos un plan completo en <strong>24 horas</strong>.</p>
+        <ul class="paso-list">
+          <li>Auditoría de perfiles</li>
+          <li>Análisis de audiencia</li>
+          <li>Propuesta de valor única</li>
+          <li>Proyección de ingresos</li>
+        </ul>
+      </div>
+      <div class="paso-connector"></div>
+    </div>
+    <div class="paso reveal-right">
+      <div class="paso-num">02</div>
+      <div class="paso-content">
+        <div class="paso-icon-wrap">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M12 1l3 6 6 .75-4.5 4.25L18 18l-6-3.25L6 18l1.5-6L3 7.75 9 7z" stroke="url(#p2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="p2" x1="3" y1="1" x2="21" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#a78bfa"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs></svg>
+        </div>
+        <h3>Creación del Producto</h3>
+        <p>Diseñamos tu producto digital desde cero: nombre, estructura de módulos, precio y guión de lanzamiento de 14 días.</p>
+        <ul class="paso-list">
+          <li>Naming y branding</li>
+          <li>Estructura de contenidos</li>
+          <li>Optimización de precio</li>
+          <li>Script de lanzamiento</li>
+        </ul>
+      </div>
+      <div class="paso-connector"></div>
+    </div>
+    <div class="paso reveal-left">
+      <div class="paso-num">03</div>
+      <div class="paso-content">
+        <div class="paso-icon-wrap">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="url(#p3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="p3" x1="3" y1="2" x2="21" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#fde68a"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs></svg>
+        </div>
+        <h3>Lanzamiento y Dinero</h3>
+        <p>Ejecutamos la campaña. Gestionamos clientes, soporte y ventas. Tú publicas tu contenido. El dinero llega a tu cuenta.</p>
+        <ul class="paso-list">
+          <li>Campaña de 14 días</li>
+          <li>Gestión de ventas</li>
+          <li>Soporte al cliente</li>
+          <li>Relanzamientos futuros</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="modelo reveal-up">
+    <div class="modelo-inner">
+      <div class="modelo-icon">💰</div>
+      <div class="modelo-text">
+        <strong>Modelo sin riesgo</strong>
+        <span>Solo cobramos si tú cobras. Sin coste inicial, sin permanencia.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MARQUEE ── -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span>TikTok Marketing</span><span class="marquee-dot">✦</span>
+    <span>Instagram Growth</span><span class="marquee-dot">✦</span>
+    <span>Podcast Strategy</span><span class="marquee-dot">✦</span>
+    <span>Productos Digitales</span><span class="marquee-dot">✦</span>
+    <span>Creator Economy</span><span class="marquee-dot">✦</span>
+    <span>Meta Ads</span><span class="marquee-dot">✦</span>
+    <span>TikTok Ads</span><span class="marquee-dot">✦</span>
+    <span>Monetización</span><span class="marquee-dot">✦</span>
+    <span>Grupo Memorable</span><span class="marquee-dot">✦</span>
+    <!-- duplicate for infinite -->
+    <span>TikTok Marketing</span><span class="marquee-dot">✦</span>
+    <span>Instagram Growth</span><span class="marquee-dot">✦</span>
+    <span>Podcast Strategy</span><span class="marquee-dot">✦</span>
+    <span>Productos Digitales</span><span class="marquee-dot">✦</span>
+    <span>Creator Economy</span><span class="marquee-dot">✦</span>
+    <span>Meta Ads</span><span class="marquee-dot">✦</span>
+    <span>TikTok Ads</span><span class="marquee-dot">✦</span>
+    <span>Monetización</span><span class="marquee-dot">✦</span>
+    <span>Grupo Memorable</span><span class="marquee-dot">✦</span>
+  </div>
+</div>
+
+<!-- ── WHY PABLO ── -->
+<section class="why-section">
+  <div class="why-header">
+    <div class="wh-left reveal-up">
+      <div class="section-tag">¿Por qué yo?</div>
+      <h2>No soy una agencia<br/>anónima.<br/><span class="gradient-text">Soy alguien<br/>que lo hace.</span></h2>
+    </div>
+    <div class="wh-right reveal-up">
+      <p>Hay mil agencias que te venden promesas. Yo tengo algo diferente: los mismos números que tú quieres conseguir, construidos desde cero, en las mismas plataformas, con el mismo punto de partida.</p>
+    </div>
+  </div>
+  <div class="why-rows">
+    <div class="why-row reveal-why">
+      <div class="wr-index">01</div>
+      <div class="wr-body">
+        <h3>Experiencia real.</h3>
+        <p>He construido mi propia audiencia desde cero. No te enseño teoría — te aplico exactamente lo que funciona hoy en TikTok e Instagram.</p>
+      </div>
+      <div class="wr-proof">
+        <span class="wrp-num">43K</span>
+        <span class="wrp-lbl">seguidores construidos desde 0</span>
+      </div>
+    </div>
+    <div class="why-row reveal-why">
+      <div class="wr-index">02</div>
+      <div class="wr-body">
+        <h3>Ejecución rápida.</h3>
+        <p>Game Plan en 24 horas. Producto en días. Lanzamiento en 2 semanas. Sin reuniones eternas, sin decks de 50 slides.</p>
+      </div>
+      <div class="wr-proof">
+        <span class="wrp-num">24h</span>
+        <span class="wrp-lbl">de primera llamada a plan de acción</span>
+      </div>
+    </div>
+    <div class="why-row reveal-why">
+      <div class="wr-index">03</div>
+      <div class="wr-body">
+        <h3>Intereses alineados.</h3>
+        <p>Cobro cuando tú cobras. Sin coste inicial, sin mensualidades. Si no hay ventas, no hay factura. Así de sencillo.</p>
+      </div>
+      <div class="wr-proof">
+        <span class="wrp-num">0€</span>
+        <span class="wrp-lbl">coste inicial — solo revenue share</span>
+      </div>
+    </div>
+    <div class="why-row reveal-why">
+      <div class="wr-index">04</div>
+      <div class="wr-body">
+        <h3>Datos y creatividad.</h3>
+        <p>Lo que pega en TikTok no funciona igual en Instagram. Combino análisis de datos con creatividad nativa de cada plataforma.</p>
+      </div>
+      <div class="wr-proof">
+        <span class="wrp-num">3.5M</span>
+        <span class="wrp-lbl">likes como evidencia de lo que funciona</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA FINAL ── -->
+<section id="contacto" class="cta-section">
+  <div class="cta-bg-orbs">
+    <div class="cta-orb cta-orb-1"></div>
+    <div class="cta-orb cta-orb-2"></div>
+    <div class="cta-orb cta-orb-3"></div>
+  </div>
+  <div class="cta-content reveal-up">
+    <div class="section-tag">Empieza hoy</div>
+    <h2>¿Tienes audiencia?<br/><span class="gradient-text">Conviértela en ingresos.</span></h2>
+    <p>No importa tu nicho. Si tienes audiencia, tenemos el producto. La primera consulta es gratis — y el plan llega en 24 horas.</p>
+    <div class="cta-actions">
+      <a href="mailto:hola@pablobarquero.com" class="btn-primary btn-xl">Quiero mi Game Plan gratuito</a>
+    </div>
+    <div class="cta-social-row">
+      <a href="https://instagram.com/pablobarquero__" target="_blank" class="csoc-link">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="url(#csig)" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="url(#csig)" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="url(#csig)"/><defs><linearGradient id="csig" x1="2" y1="22" x2="22" y2="2" gradientUnits="userSpaceOnUse"><stop stop-color="#f58529"/><stop offset="0.5" stop-color="#dd2a7b"/><stop offset="1" stop-color="#515bd4"/></linearGradient></defs></svg>
+        @pablobarquero__
+      </a>
+      <a href="https://tiktok.com/@pablobarquero_" target="_blank" class="csoc-link">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.79a8.16 8.16 0 004.77 1.52V6.84a4.85 4.85 0 01-1-.15z" fill="url(#cstt)"/><defs><linearGradient id="cstt" x1="3" y1="2" x2="21" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#69C9D0"/><stop offset="1" stop-color="#EE1D52"/></linearGradient></defs></svg>
+        @pablobarquero_
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-inner">
+    <div class="logo">Pablo<span>Barquero</span></div>
+    <p>© 2025 Pablo Barquero · Marketing Digital · Grupo Memorable</p>
+    <div class="footer-links">
+      <a href="mailto:hola@pablobarquero.com">hola@pablobarquero.com</a>
+    </div>
+  </div>
+</footer>
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- Three.js UMD (no módulos, compatible con file://) -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/loaders/GLTFLoader.js"></script>
+<script>
+(function() {
+  function initModel(canvasId, modelUrl, rotDir) {
+    var canvas = document.getElementById(canvasId);
+    if (!canvas) return;
+
+    var renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setClearColor(0x000000, 0);
+    renderer.outputEncoding = THREE.sRGBEncoding;
+
+    var W = 280, H = 380;
+    renderer.setSize(W, H);
+
+    var scene  = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(38, W / H, 0.1, 100);
+    camera.position.set(0, 0, 5);
+
+    scene.add(new THREE.AmbientLight(0xffffff, 1.6));
+    var d1 = new THREE.DirectionalLight(0xffffff, 2.4);
+    d1.position.set(4, 6, 5); scene.add(d1);
+    var d2 = new THREE.DirectionalLight(0xa78bfa, 1.2);
+    d2.position.set(-4, -2, 3); scene.add(d2);
+
+    var model = null;
+    var loader = new THREE.GLTFLoader();
+    loader.load(
+      modelUrl,
+      function(gltf) {
+        model = gltf.scene;
+        var box    = new THREE.Box3().setFromObject(model);
+        var size   = box.getSize(new THREE.Vector3());
+        var center = box.getCenter(new THREE.Vector3());
+        var maxDim = Math.max(size.x, size.y, size.z);
+        var scale  = 2.6 / maxDim;
+        model.scale.setScalar(scale);
+        model.position.sub(center.multiplyScalar(scale));
+        scene.add(model);
+      },
+      undefined,
+      function(err) { console.warn('GLB load error:', modelUrl, err); }
+    );
+
+    var hero = document.getElementById('hero');
+    var scrollP = 0;
+    window.addEventListener('scroll', function() {
+      if (!hero) return;
+      var r = hero.getBoundingClientRect();
+      scrollP = Math.max(0, Math.min(1, -r.top / (r.height * 0.6)));
+    });
+
+    var t = Math.random() * Math.PI * 2;
+    (function loop() {
+      requestAnimationFrame(loop);
+      t += 0.008;
+      if (model) {
+        model.rotation.y += rotDir * 0.007;
+        model.position.y  = Math.sin(t) * 0.2;
+      }
+      canvas.style.opacity = Math.max(0, 1 - scrollP * 2.2);
+      renderer.render(scene, camera);
+    })();
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    initModel('canvas3d-left',  'LogoInstagram.glb',  1);
+    initModel('canvas3d-right', 'LogoYoutube.glb',   -1);
+  });
+})();
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
