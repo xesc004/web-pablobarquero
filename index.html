@@ -594,7 +594,7 @@
         var size   = box.getSize(new THREE.Vector3());
         var center = box.getCenter(new THREE.Vector3());
         var maxDim = Math.max(size.x, size.y, size.z);
-        var scale  = 2.6 / maxDim;
+        var scale  = 1.4 / maxDim;
         model.scale.setScalar(scale);
         model.position.sub(center.multiplyScalar(scale));
         scene.add(model);
@@ -606,10 +606,10 @@
     var t = Math.random() * Math.PI * 2;
     (function loop() {
       requestAnimationFrame(loop);
-      t += 0.008;
+      t += 0.006;
       if (model) {
-        model.rotation.y += rotDir * 0.007;
-        model.position.y  = Math.sin(t) * 0.2;
+        model.position.x = Math.cos(t) * 0.18;
+        model.position.y = Math.sin(t) * 0.18;
       }
       renderer.render(scene, camera);
     })();
