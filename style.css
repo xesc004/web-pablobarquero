@@ -330,7 +330,7 @@ body {
   transition: opacity 0.3s;
 }
 .hero-3d-left  { left: 2vw; }
-.hero-3d-right { right: 2vw; }
+.hero-3d-right { right: 2vw; top: 30%; }
 
 /* Floating brand logos */
 .hero-float-logo {
