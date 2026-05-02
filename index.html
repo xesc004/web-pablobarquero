@@ -588,6 +588,8 @@
       modelUrl,
       function(gltf) {
         model = gltf.scene;
+        /* corrige orientación: los GLB están tumbados mirando arriba */
+        model.rotation.x = -Math.PI / 2;
         var box    = new THREE.Box3().setFromObject(model);
         var size   = box.getSize(new THREE.Vector3());
         var center = box.getCenter(new THREE.Vector3());
